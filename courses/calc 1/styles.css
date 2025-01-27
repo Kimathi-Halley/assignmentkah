@@ -1,0 +1,227 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh; /* Changed from height: 100vh; to allow content to expand */
+  background: #fafaf7;
+  overflow: auto; /* Changed from hidden */
+  
+}
+
+.nav-container {
+  width: 100%;
+  position: relative;
+  z-index: 1001;
+}
+
+.nav {
+  width: 95%;
+  margin: 0 auto;
+  padding: 2em 0;
+  display: flex;
+  border-bottom: 1px solid #000;
+  
+}
+
+.nav-item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Voyage";
+}
+
+.nav-logo a {
+  font-family: "Voyage";
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.nav-cta a {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.nav-links a {
+  padding: 0 2em;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .nav {
+    width: 100%;
+  }
+
+  .nav-links,
+  .nav-cta {
+    display: none;
+  }
+}
+
+.hero-container {
+  position: relative;
+  z-index: 10000;
+  width: 100%;
+}
+
+.hero > * {
+  position: relative;
+}
+
+.hero {
+  width: 30%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5em 0;
+}
+
+h1 {
+  font-family: "Voyage";
+  font-weight: 500;
+  font-size: 5vw;
+}
+
+.cta button {
+  background: #000;
+  color: #fff;
+  border: none;
+  outline: none;
+  margin: 5em 0 0 0;
+  padding: 1.6em 3.2em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+p {
+  margin: 4em 0 0 0;
+  font-family: "Neue Montreal";
+  font-size: 14px;
+}
+
+.bg-gradient {
+  position: fixed; /* Changed from absolute to fixed */
+  top: 0;
+  left: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  z-index: 0; /* Behind other elements */
+  filter: blur(20px);
+  opacity: 1;
+}
+
+
+.homework-section {
+  padding: 4em 2em;
+  text-align: center;
+  font-family: "Voyage", sans-serif;
+  position: relative;
+   
+}
+
+.homework-section h1 {
+  font-family: "Voyage", sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 1.5em;
+}
+
+.homework-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2em;
+}
+
+
+.homework-box {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  width: 100%;
+  height: 200px;
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.homework-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+  background-color: #47CC5B;
+  color: #fff;
+}
+
+.homework-box1 {
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 20px;
+  width: 100%;
+  height: 100px;
+  text-decoration: none;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  cursor: pointer;
+  overflow: auto;
+}
+
+
+.homework-content {
+  text-align: center;
+  
+}
+
+.homework-content h2 {
+  font-family: "Voyage", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.homework-content p {
+  font-family: "Voyage", sans-serif;
+  font-size: 1em;
+  
+}
+
+@media (max-width: 768px) {
+  .homework-box {
+    width: 80%;
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .homework-box {
+    width: 100%;
+    height: 160px;
+  }
+
+  .homework-section h1 {
+    font-size: 2em;
+  }
+
+  .homework-content h2 {
+    font-size: 1.2em;
+  }
+
+  .homework-content p {
+    font-size: 0.9em;
+  }
+}
