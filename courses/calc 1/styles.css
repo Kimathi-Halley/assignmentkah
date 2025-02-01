@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -8,10 +7,9 @@
 html,
 body {
   width: 100%;
-  min-height: 100vh; /* Changed from height: 100vh; to allow content to expand */
+  min-height: 100vh;
   background: #fafaf7;
-  overflow: auto; /* Changed from hidden */
-  
+  overflow: auto;
 }
 
 .nav-container {
@@ -26,7 +24,6 @@ body {
   padding: 2em 0;
   display: flex;
   border-bottom: 1px solid #000;
-  
 }
 
 .nav-item {
@@ -41,11 +38,11 @@ body {
 .nav-item a {
   text-decoration: none;
   color: #000;
-  font-family: "Voyage";
+  font-family: "Voyage", sans-serif;
 }
 
 .nav-logo a {
-  font-family: "Voyage";
+  font-family: "Voyage", sans-serif;
   font-size: 30px;
   font-weight: 700;
 }
@@ -71,6 +68,7 @@ body {
   }
 }
 
+/* Hero (optional if you're using it) */
 .hero-container {
   position: relative;
   z-index: 10000;
@@ -89,7 +87,7 @@ body {
 }
 
 h1 {
-  font-family: "Voyage";
+  font-family: "Voyage", sans-serif;
   font-weight: 500;
   font-size: 5vw;
 }
@@ -105,30 +103,31 @@ h1 {
   font-size: 12px;
 }
 
+/* Basic paragraph styles */
 p {
-  margin: 4em 0 0 0;
-  font-family: "Neue Montreal";
+  margin-top: 4em;
+  font-family: "Neue Montreal", sans-serif;
   font-size: 14px;
 }
 
+/* Gradient background */
 .bg-gradient {
-  position: fixed; /* Changed from absolute to fixed */
+  position: fixed; 
   top: 0;
   left: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  z-index: 0; /* Behind other elements */
+  width: 100%;
+  height: 100%;
+  z-index: 0;
   filter: blur(20px);
   opacity: 1;
 }
 
-
+/* Homework Section */
 .homework-section {
   padding: 4em 2em;
   text-align: center;
   font-family: "Voyage", sans-serif;
   position: relative;
-   
 }
 
 .homework-section h1 {
@@ -144,7 +143,7 @@ p {
   gap: 2em;
 }
 
-
+/* Optional box style (if you want clickable boxes):
 .homework-box {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
@@ -160,32 +159,38 @@ p {
   cursor: pointer;
   overflow: hidden;
 }
-
 .homework-box:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  background-color: #47CC5B;
+  background-color: #47cc5b;
   color: #fff;
 }
+*/
 
+/* The container for your homework entries */
 .homework-box1 {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
   width: 100%;
-  height: 100px;
+  /* height: 100px; - removed to allow auto-sizing */
+  padding: 1em;
   text-decoration: none;
   color: #000;
   display: flex;
-  align-items: center;
-  justify-content: left;
-  cursor: pointer;
-  overflow: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1em;
+  cursor: default;
+  max-height: 300px;      
+  overflow-y: auto;       
+  overflow-x: hidden;
+
 }
 
-
 .homework-content {
-  text-align: center;
-  
+  width: 100%;
+  text-align: left;
+  margin-top: 0.5em;
 }
 
 .homework-content h2 {
@@ -195,33 +200,28 @@ p {
 }
 
 .homework-content p {
-  font-family: "Voyage", sans-serif;
+  font-family: "Neue Montreal", sans-serif;
   font-size: 1em;
-  
+  margin-top: 0.5em;
 }
 
+/* Responsive */
 @media (max-width: 768px) {
-  .homework-box {
-    width: 80%;
-    height: 180px;
+  .homework-section h1 {
+    font-size: 2em;
   }
 }
 
 @media (max-width: 480px) {
-  .homework-box {
-    width: 100%;
-    height: 160px;
-  }
-
   .homework-section h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
-
+  
   .homework-content h2 {
     font-size: 1.2em;
   }
-
+  
   .homework-content p {
-    font-size: 0.9em;
+    font-size: 0.95em;
   }
 }
