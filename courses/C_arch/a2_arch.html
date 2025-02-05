@@ -96,12 +96,215 @@
 
         <div class="homework-box1">
           <div class="homework-content">
-            <p># 1<br>
-              content
+            <p># 1  Recall the concept, components & characteristics of a bus. <br>
+              content<br><br>
             </p>
-            <p>ANS: test </p>
+            <p>ANS: a bus is a shared communication pathway that connects <br> 
+              various components of a computer system—such as the CPU, memory, <br>
+              and input/output (I/O) devices—enabling them to exchange data and control signals.  </p>
           </div>
         </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p># 2   Outline similarities and differences between the ISA-bus, <br>
+              a high-performance bus and the PCI bus. <br><br>
+            </p>
+            <p>ANS: Similarities<br>
+              Both the ISA-bus and PCI-bus serve to connect components by
+               carrying data, addresses, and control signals. <br>
+              Both Enable system expansion by interfacing various devices.</p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#3 Describe the benefits of an I/O module 
+              and describe the various I/O functions. <br><br>
+            </p>
+            <p> Benefits: <br>
+              Simplified Interface, for a wide variety peripherals<br>
+              Expandability, I/O is modular and can make it easier to integrate new devices<br>
+              Buffering, Matcheing the speed of the faster CPU to the slower I/O devices. <br><br>
+            
+              I/O functions:<br>
+               Data Transfer: Moves data between the CPU and peripheral devices.<br>
+               Address Decoding: Identifies which device should communicate based on address signals.<br>
+               Signal Conversion: Converts data formats (e.g., digital to analog) as needed.<br>
+               Control Signal Management: Generates and interprets synchronization and command signals.<br>
+               Interrupt Handling: Detects and processes asynchronous device signals.<br>
+               Direct Memory Access (DMA): Facilitates data transfers directly between devices and memory, reducing CPU load. </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#4 Distinguish between the three I/O techniques programmes I/O, 
+              interrupt-driven I/O and DMA. <br><br>
+            </p>
+            <p> Programmed I/O:<br>
+              - The CPU actively polls the I/O device to check if it’s ready.<br>
+              - Data transfer is managed directly by the CPU.<br>
+              - Wastes CPU cycles due to continuous waiting.<br>
+              - Suitable for low-speed devices with infrequent data transfer.<br><br>
+              
+              Interrupt-Driven I/O:<br>
+              - The device signals the CPU via an interrupt when it is ready.<br>
+              - The CPU executes an interrupt service routine to handle the I/O.<br>
+              - Reduces CPU idle time compared to polling.<br>
+              - More efficient for devices that transfer data at irregular intervals.<br><br>
+              
+              Direct Memory Access (DMA):<br>
+              - A dedicated DMA controller transfers data directly between the I/O device and memory.<br>
+              - Minimizes CPU involvement, freeing it to perform other tasks.<br>
+              - Highly efficient for large or high-speed data transfers.<br>
+              - Requires additional hardware and more complex management.<br>
+               </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#5 Describe how the CPU deals with multiple I/O modules if interrupt-driven I/O<br>
+               is used and how it can determine, which module requested an interrupt. <br><br>
+            </p>
+            <p>  Multiple I/O modules are connected to a common interrupt controller.<br>
+              When any module requires service, it sends an interrupt signal to the CPU via this controller.<br>
+              The interrupt controller either:<br>
+                  • Provides a unique interrupt vector (vectored interrupts), or<br>
+                  • Holds status information that the CPU can poll to determine which device triggered the interrupt.<br>
+               Using the vector or by reading the controller’s status register, the CPU identifies the source.<br>
+               It then jumps to the corresponding interrupt service routine to handle the specific I/O module's request.<br>
+               </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#6 Recall the characteristics of memory <br><br>
+            </p>
+            <p> Memory is characterized by its capacity, speed, volatility, cost, and reliability. <br>
+              Capacity refers to the total data it can hold. <br>
+               Speed involves both the access time (latency) and the data transfer rate (bandwidth).<br> 
+               Volatility distinguishes between memory that loses data when power is off lik DRAM and that which retains data (e.g., flash).<br>
+                Cost per bit and reliability, including error correction features, 
+                further define its effectiveness, along with the underlying organization and addressing scheme.<br>
+            </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#7 Distinguish between the various access mechanisms to memory,
+               i.e., sequential, direct, random and associative. <br><br>
+            </p>
+            <p> Sequential Access:<br>
+              Data is read in a fixed, predetermined order.<br>
+              
+              Direct Access:<br>
+              Each data element is stored at a unique location and can be reached directly by specifying its address.<br> 
+              
+              Random Access:<br>
+              Any memory location can be accessed independently and with uniform speed.<br> 
+              
+              Associative Access:<br>
+               data is retrieved based on its content rather than a specific address. 
+               </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#8 Explain the phrase locality of reference.<br><br>
+            </p>
+            <p> Locality of reference refers to the tendency of a program to access a small, <br>
+              localized set of memory locations repeatedly over a short period. </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#9  What is register memory used for? <br><br>
+            </p>
+            <p> Register memory is used by the CPU to store operands, <br>
+              intermediate results, and control data during instruction execution,<br>
+               providing the fastest possible data access.
+            </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#10 What is a cache and where is it located within a computer?<br><br>
+            </p>
+            <p> A cache is a small, high-speed memory that temporarily stores frequently accessed data<br>
+               and instructions to reduce the time required to fetch them from main memory.<br>
+                It is located on or very close to the CPU, or on the processor chip itself.
+            </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#11 Outline how a cache is organised and how it works?  <br><br>
+            </p>
+            <p> A cache is organized into fixed-size blocks that store copies of data from main memory.<br>
+               These blocks are arranged in a specific mapping scheme—direct-mapped, set-associative, <br>
+               or fully associative—which determines how main memory addresses map to cache locations.<br>
+               HOW IT WORKS: When the CPU requests data, the cache checks for a matching tag to quickly return the data;<br>
+                if not, the appropriate block is fetched from main memory and stored in the cache.
+            </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#12 Distinguish between the cache write policies write through and write back.  <br><br>
+            </p>
+            <p> Write-Through:<br>
+               Every write updates both the cache and main memory immediately.<br>
+               Ensures strong data consistency.<br>
+               Can incur slower performance due to increased memory traffic.<br><br>
+              
+              Write-Back:<br>
+               Writes update only the cache, marking the block as "dirty."<br>
+               Main memory is updated only when the dirty block is evicted.<br>
+               Improves performance by reducing write operations to main memory but requires extra logic for data consistency.
+               </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#13 Describe the various mapping functions
+               and replacement algorithms used in a cache.  <br><br>
+            </p>
+            <p> Mapping Functions:
+               Direct Mapping: Each main memory block maps to one specific cache line. 
+               Fully Associative: A memory block can be placed in any cache line. 
+               Set-Associative: The cache is divided into sets, and a memory block can be placed in any line within a particular set. 
+              
+              Replacement Algorithms:
+               Least Recently Used (LRU): Evicts the block that has not been accessed for the longest period.
+               First-In, First-Out (FIFO): Removes the oldest block in the set based on the order in which blocks were loaded.
+               Least Frequently Used (LFU): Evicts the block that has been accessed the fewest times.
+               </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#14 Describe the Program concept.<br><br>
+            </p>
+            <p> The program concept in computing refers to a static collection of instructions and data that define a specific computational task. <br>
+              Written in a programming language, a program is stored in memory and, when executed by the CPU, directs the computer through a series of operations, including control flow and data manipulation. 
+            </p>
+          </div>
+        </div>
+
+
+
+
       </div>
     </section>
 
