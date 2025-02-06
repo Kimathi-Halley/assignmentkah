@@ -143,7 +143,7 @@ p {
   gap: 2em;
 }
 
-/* Optional box style (if you want clickable boxes):
+/* Optional box style 
 .homework-box {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
@@ -172,7 +172,7 @@ p {
   background: rgba(255, 255, 255, 0.95);
   border-radius: 20px;
   width: 100%;
-  /* height: 100px; - removed to allow auto-sizing */
+  /* height: 100px; - removed */
   padding: 1em;
   text-decoration: none;
   color: #000;
