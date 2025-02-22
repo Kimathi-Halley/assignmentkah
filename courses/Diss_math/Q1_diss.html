@@ -532,59 +532,14 @@
               <li>∀x ¬Q(x): False</li>
               <li>Q(-2): True</li>
             </ul>
-
-
-
           </div>
         </div>
 
-        <div class="homework-box1">
-          <div class="homework-content">
-            <p>#10 What is a cache and where is it located within a computer?<br><br>
-            </p>
-            <p> A cache is a small, high-speed memory that temporarily stores frequently accessed data<br>
-               and instructions to reduce the time required to fetch them from main memory.<br>
-                It is located on or very close to the CPU, or on the processor chip itself.
-            </p>
-          </div>
-        </div>
-
-        <div class="homework-box1">
-          <div class="homework-content">
-            <p>#11 Outline how a cache is organised and how it works?  <br><br>
-            </p>
-            <p> A cache is organized into fixed-size blocks that store copies of data from main memory.<br>
-               These blocks are arranged in a specific mapping scheme—direct-mapped, set-associative, <br>
-               or fully associative—which determines how main memory addresses map to cache locations.<br>
-               HOW IT WORKS: When the CPU requests data, the cache checks for a matching tag to quickly return the data;<br>
-                if not, the appropriate block is fetched from main memory and stored in the cache.
-            </p>
-          </div>
-        </div>
-
-        <div class="homework-box1">
-          <div class="homework-content">
-            <p>#12 Distinguish between the cache write policies write through and write back.  <br><br>
-            </p>
-            <p> Write-Through:<br>
-               Every write updates both the cache and main memory immediately.<br>
-               Ensures strong data consistency.<br>
-               Can incur slower performance due to increased memory traffic.<br><br>
-              
-              Write-Back:<br>
-               Writes update only the cache, marking the block as "dirty."<br>
-               Main memory is updated only when the dirty block is evicted.<br>
-               Improves performance by reducing write operations to main memory but requires extra logic for data consistency.
-               </p>
-          </div>
-        </div>
-
-
-
+        
       </div>
     </section>
 
-    <!-- GSAP Animations -->
+    <!-- GSAP Animationns-->
     <script>
       gsap.from(".nav-container", {
         duration: 2,
