@@ -183,7 +183,7 @@ p {
   cursor: default;
   max-height: 300px;      
   overflow-y: auto;       
-  overflow-x: hidden;
+  overflow-x: auto;
 
 }
 
