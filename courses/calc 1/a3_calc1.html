@@ -441,6 +441,218 @@
           </div>
         </div>
         
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#3 <br>
+              We need to find a &#x03B4; such that if |x - 4| &lt; &#x03B4;, then |&#x221A;x - 2| &lt; 0.4. <br><br>
+              Note that |&#x221A;x - 2| &lt; 0.4 implies: <br>
+              1.6 &lt; &#x221A;x &lt; 2.4.<br><br>
+              Squaring both sides: <br>
+              (1.6)² &lt; x &lt; (2.4)², i.e., 2.56 &lt; x &lt; 5.76.<br><br>
+              We want (4 - &#x03B4;, 4 + &#x03B4;) to be a subset of (2.56, 5.76). This requires: <br>
+              4 - &#x03B4; &gt; 2.56 and 4 + &#x03B4; &lt; 5.76.<br><br>
+              Solving these gives: <br>
+              &#x03B4; &lt; 4 - 2.56 = 1.44 and &#x03B4; &lt; 5.76 - 4 = 1.76.<br><br>
+              The most restrictive is &#x03B4; = 1.44. <br><br>
+              <strong>Final Answer:</strong> &#x03B4; = 1.44.
+            </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#11<br>
+              <strong>(a)</strong> For a disk of area 1000 cm², using <em>Area</em> = πr² gives
+              $$
+                r \;=\;\sqrt{\frac{1000}{\pi}} \;\approx\; 17.84\text{ cm}.
+              $$
+        
+              <strong>(b)</strong> With an error tolerance of ±5 cm², the acceptable area range is 995 ≤ πr² ≤ 1005.  
+              
+              $$
+                \sqrt{\frac{995}{\pi}}
+                \;\le\;
+                r
+                \;\le\;
+                \sqrt{\frac{1005}{\pi}}.
+              $$
+              Numerically, this is roughly 17.79 ≤ r ≤ 17.89.  
+              So the radius must be kept within about 0.05 cm of 17.84 cm.
+        
+              <strong>(c)</strong> In the context of the ε–δ definition of a limit, set
+              \[
+                x = r,\quad
+                f(x) = \pi x^2,\quad
+                a = \sqrt{\tfrac{1000}{\pi}},\quad
+                L = 1000,\quad
+                \varepsilon = 5.
+              \]
+              Then δ is the “allowable radius deviation” so that 
+              $|f(r) - L| &lt; \varepsilon$.  
+              Concretely,
+              \[
+                |\,\pi r^2 - 1000\,| &lt; 5
+                \quad\Longleftrightarrow\quad
+                995 &lt; \pi r^2 &lt; 1005
+                \quad\Longleftrightarrow\quad
+                \sqrt{\tfrac{995}{\pi}} &lt; r &lt; \sqrt{\tfrac{1005}{\pi}}.
+              \]
+              Hence we choose δ to be the smaller of the distances from
+              $a = \sqrt{\tfrac{1000}{\pi}}$
+              to the endpoints 
+              $\sqrt{\tfrac{995}{\pi}}$
+              and
+              $\sqrt{\tfrac{1005}{\pi}}$.
+              Numerically, δ ≈ 0.05 cm.
+            </p>
+          </div>
+        </div>
+        
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p># 17<br>
+               prove, using the <em>ε–δ definition of a limit</em>, that 
+              $$\lim_{x \to -3} (1 - 4x) = 13.$$
+        
+              <strong>Definition:</strong><br>
+              For every ε &gt; 0, there must exist a δ &gt; 0 such that if 0 &lt; |x + 3| &lt; δ, then 
+              $$|(1 - 4x) - 13| &lt; ε.$$
+        
+              <br><br>
+        
+              1. <em>Rewrite:</em><br>
+                 $$(1 - 4x) - 13 = 1 - 4x - 13 = -4x - 12 = -4(x + 3).$$<br><br>
+        
+              2. <em>Simplify:</em><br>
+                 $$|(1 - 4x) - 13| = |-4(x + 3)| = 4\,|x + 3|.$$
+        
+              3. <br>
+                 $$4\,|x + 3| &lt; ε \quad\Longleftrightarrow\quad |x + 3| &lt; \frac{ε}{4}.$$<br>
+        
+              4. <em>Choose δ:</em><br>
+                 Let 
+                 $$δ = \frac{ε}{4}.$$<br>
+        
+              5. <em>Verify the condition:</em><br>
+                 If 0 &lt; |x + 3| &lt; δ, then 
+                 $$|(1 - 4x) - 13| = 4\,|x + 3| &lt; 4\,δ = 4\left(\frac{ε}{4}\right) = ε.$$
+        
+              Thus, for every ε &gt; 0, choosing δ = ε/4 ensures the required condition 
+              $$|(1 - 4x) - 13| &lt; ε.$$
+        
+              <strong>Conclusion:</strong> By definition, 
+              $$\lim_{x \to -3} (1 - 4x) = 13.$$
+            </p>
+          </div>
+        </div>
+        
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#3<br>
+              <strong>(a)</strong> From the graph, the function $f$ is discontinuous at:
+              <ul>
+                <li><em>x = −2</em></li>
+                <li><em>x = 0</em></li>
+                <li><em>x = 4</em></li>
+              </ul>
+              Each of these points shows a mismatch between the left-hand limit and the right-hand limit
+               or between the limit and the function’s actual value (an open circle or a jump).
+        
+              <br><strong>(b)</strong> For each discontinuity:
+              <ul>
+                <li>
+                  <em>x = −2</em>  
+                  <br>
+                  The graph approaches one height from the left of −2 and a different height from the right of −2, so it has a jump discontinuity. There is no continuity from either side (the left- and right-hand limits differ).
+                </li>
+                <li>
+                  <em>x = 0</em>  
+                  <br>
+                  Here, there is also a jump (the left-hand limit and right-hand limit are not equal). Thus, it is not continuous from the left or from the right.
+                </li>
+                <li>
+                  <em>x = 4</em>  
+                  <br>
+                  The graph breaks again (another jump or vertical behavior), so the left-hand and right-hand limits disagree. As a result, it is discontinuous from both sides at x = 4.
+                </li>
+              </ul>
+              In summary, each of these points fails to have matching left- and right-hand limits, so the function is not continuous there.
+            </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#10 <br>
+              (a) Temperature vs. time is continuous because temperature changes gradually with time. <br><br>
+              (b) Temperature vs. distance is continuous since there are no abrupt jumps over a geographic region. <br><br>
+              (c) Altitude vs. distance is generally continuous along a smooth path, though natural features (like cliffs) could cause isolated discontinuities. <br><br>
+              (d) Taxi cost vs. distance is typically discontinuous due to step increases (fare increments) in the pricing structure. <br><br>
+              (e) Current vs. time is continuous as electrical current changes smoothly with time under normal conditions.
+            </p>
+          </div>
+        </div>
+        
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#11 <br>
+              Consider $f(x)=\bigl(x+2x^3\bigr)^4$ and $a=-1$. We want to show $f$ is continuous at $x=-1$, i.e., 
+              $$\lim_{x\to -1}f(x)=f(-1).$$<br><br>
+              
+              <strong>Step 1: Evaluate $f(-1)$ directly.</strong><br>
+              \[
+                f(-1)=\bigl((-1)+2(-1)^3\bigr)^4=\bigl(-1+2(-1)\bigr)^4=\bigl(-1-2\bigr)^4=(-3)^4=81.
+              \]<br><br>
+              
+              <strong>Step 2: Compute the limit as $x\to -1$.</strong><br>
+              Because $x+2x^3$ is a polynomial (hence continuous), and the function $u^4$ is also continuous, we can apply the Limit Laws and substitute directly:
+              \[
+                \lim_{x\to -1}\bigl(x+2x^3\bigr)^4
+                =\Bigl(\lim_{x\to -1}\bigl(x+2x^3\bigr)\Bigr)^4
+                =\bigl(-1+2(-1)\bigr)^4
+                =(-3)^4=81.
+              \]<br><br>
+              
+              <strong>Step 3: Conclude continuity at $x=-1$.</strong><br>
+              Since
+              \[
+                \lim_{x\to -1} f(x)=81=f(-1),
+              \]
+              $f$ is continuous at $x=-1$ by the definition of continuity.
+            </p>
+          </div>
+        </div>
+        
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#16 <br>
+              Given:  g(x) = (x – 1)/(3x + 6)  on x ∈ (–∞, –2).<br><br>
+               3x + 6 = 3(x + 2); zero at x = –2.<br>
+               Since x ∈ (–∞, –2), x ≠ –2 ⇒ denominator ≠ 0.<br>
+               g(x) is a ratio of polynomials, hence continuous where defined.<br>
+               <strong>Answer:</strong> g(x) is continuous on (–∞, –2).
+            </p>
+          </div>
+        </div>
+
+        <div class="homework-box1">
+          <div class="homework-content">
+            <p>#21 <br>
+              As $x \to 0^{-}$, $f(x) = \cos x \to \cos(0) = 1$.<br>
+              As $x \to 0^{+}$, $f(x) = 1 - x^2 \to 1 - 0 = 1$.<br>
+              Thus, $\lim_{x \to 0} f(x) = 1$.<br>
+              But $f(0)=0$.<br>
+              Since $f(0)$ differs from the limit, $f$ is discontinuous at $x=0$.
+            </p>
+            <img src="graph5_ass3.png">
+          </div>
+        </div>
+        
+        
+
+
+        
+        
         
         
 
