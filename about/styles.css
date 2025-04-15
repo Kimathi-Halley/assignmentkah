@@ -9,7 +9,7 @@
 html,
 body {
   width: 100%;
-  min-height: 100vh; /* Changed from height: 100vh; to allow content to expand */
+  min-height: 90vh; /* Changed from height: 100vh; to allow content to expand */
   background: #fafaf7;
   overflow: auto; /* Changed from hidden to allow scrolling */
   
